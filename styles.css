@@ -1,0 +1,2234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'open sans';
+    font-family: themillion;
+    font-family: Cosmos;
+}
+
+@font-face {
+    font-family: themillion;
+    src: url(Nletra2.otf);
+    font-family: cosmos;
+    src: url(letra/Cosmos.ttf);
+    
+}
+
+/*apartado de idioma*/
+.one {
+    margin: 10px;
+    font-size: 13px;
+}
+.idiom {
+    float: right;
+    margin-right: 110px;
+    margin-top: -5px;
+}
+.idioma1 img{
+    border-radius: 50%;
+}
+.idioma2 img{
+    border-radius: 50%;
+}
+/*datos principales*/
+.conte {
+    display: flex;
+    margin-left: 145px;
+}
+
+.conte a,p{
+    text-decoration: none;
+    color: #595959;
+}
+.conte a:hover {
+    color: #a1a1a1;
+    cursor: pointer;
+}
+.conte p:hover{
+    color: #a1a1a1;
+    cursor: pointer;
+}
+
+/*VIDEO EN PAGINA PRIMCIPAL ***SERCONOMAR2*****/
+.video5 {
+    text-align: center;
+}
+
+/*INETNTO 3 DE MENU SCROLL*/
+html {
+    scroll-behavior: smooth;
+}
+.header {
+  
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+
+.nav {
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    background: #154a7d;
+    position: fixed;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 25%) 0 -6px 6px -6px inset;    
+    height: 60px;
+   
+
+}
+
+.nav.active {
+    background: #154a7d;
+    position: fixed;
+    width: 100%;
+    margin-top: -40px;
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    margin-left: 330px;
+}
+
+
+.nav img {
+    margin-left: 0px;
+    width: 160px;
+    height: 60px;
+}
+
+/*navvv*/
+
+
+.nav.active .logo,
+.nav.active a {
+    color: #fff;
+}
+
+.nav.active a:hover {
+    background: #57dbff;
+    color: #fff;
+    
+}
+
+
+/*mas navv*/
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 -50px;
+    line-height: 80px;
+}
+
+.nav-menu {
+
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+    list-style: none;
+
+}
+
+.nav-menu-item {
+    
+    font-size: 13px;
+    margin: -8px -10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-item:hover {
+   
+    transform: translateY(-4px);
+    transition: all 0.5s;
+}
+
+.nav-menu-link {
+    padding: 20px 40px 25px;
+    border-radius: 1px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color: #57dbff;
+    transition: .5s;
+    
+    
+}
+
+.nav-toggle {
+    color: rgb(5, 5, 5);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+ 
+
+/*SLIDER PRINCIPAL*/
+.slider1 {
+
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: -450px;
+    margin-top: -50px;
+
+}
+
+.slider1 button {
+    position: absolute;
+}
+
+.slider1 ul {
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: cambio 45s infinite alternate;
+
+
+}
+
+.slider1 li {
+
+    list-style: none;
+    width: 100%;
+}
+
+.slider1 img {
+    height: 58%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+@keyframes cambio {
+
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    85% {
+        margin-left: -300%;
+    }
+    90% {
+        margin-left: -400%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
+}
+
+/*SECCION DE LA VENTANA MODAL PARA EL VIDEO DE YOUTUBE INSTITUSIONAL*/
+.slider1 button {
+    margin-left: 150px;
+    margin-top: 450px;
+    width: 280px;
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.slider1 .clo {
+    width: 40px;
+    height: 35px;
+}
+.modal-container1 button {
+margin-left: 838px;
+margin-top: -450px;
+}
+.slider1 .btnvideo {
+    background-color: #78a240;
+}
+.btnvideo:hover{
+    background-color: #0e3f5c;
+    color: #fff;
+}
+.btnvideo {
+    color: #fff;
+}
+/*AQUI EMPIEZA MI SLIDER PARA PROCEOSOS DE PRODUCTO*/
+.container-slider {
+    z-index: 1;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider_section {
+    width: 100%;
+}
+
+.slider_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_btn {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider_btn:hover {
+    background: #fff;
+}
+
+.slider_btn-left {
+    left: 935px;
+}
+
+.slider_btn-rigth {
+    right: 10px;
+}
+
+
+/*AQUI EMPIEZA EL SEGUNDO CSS DEL SEGUNDOSLIDER PARA NUESTRO PRODUCTO*/
+.container-slider5 {
+    z-index: 1;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider5 {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider_section5 {
+    width: 100%;
+}
+
+.slider_img5 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_btn5 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slider_btn5:hover {
+    background: rgb(109, 109, 109);
+}
+
+.slider_btn-left5 {
+    left: 938px;
+}
+
+.slider_btn-rigth5 {
+    right: 10px;
+}
+
+/* AQUI TERMINA EL SEGUNDO SLIDER*/
+
+/* CONTENEDOR PRINCIPAL aqui puedo ajustar el margen del grosor de la pag. completa*/
+
+.contenedor {
+    line-height: 24px;
+    font-family: themillion;
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1080px;
+    margin: auto;
+    overflow: hidden;
+    word-spacing: 1px;
+    font-size: 17px;
+
+}
+
+.titulo {
+    color: #414144;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 6px;
+}
+
+.portafolio p {
+    color: #414144;
+    font-size: 19px;
+    text-align: justify;
+    max-width: 960px;
+    margin: auto;
+
+}
+
+
+/*sobre nosotros*/
+main .sobre-nosotros {
+    padding: 10px 0 10px 0;
+    color: #0e3f5c;
+    margin-top: 100px;
+}
+
+.contenedor-sobre-nosotros {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 30px;
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+
+.contenido-textos h3 {
+    right: 200px;
+    margin-bottom: 15px;
+    font-family: Cosmos;
+}
+
+.contenido-textos h3 span {
+    background: #00c6ff;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+    font-family: Cosmos;
+}
+
+.contenido-textos p {
+    color: #414144;
+    font-family: Cosmos;
+    padding: 0px 0px -4px -4px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 15px;
+}
+.contenido-textos .i1{
+    margin-left: 30px
+}
+.contenedor-sobre-nosotros .ar{
+    margin-left: 0px;
+}
+
+/*GALERIA*/
+
+.portafolio {
+    background: #9fc9cc;
+    text-align: justify;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+.portafolio p {
+    text-align: center;
+}
+
+/*probablemente aqui empieza *******/
+
+.galeria {
+    display: flex;
+    margin: 50px;
+}
+
+.foto {
+    margin: auto;
+
+}
+
+/*Seccion modal VENTANA EMERGENTE*/
+button {
+    background-color: #5b82ec;
+    border: 0;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+    
+}
+
+.modal-container {
+    z-index: 2;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+}
+
+.modal-container img {
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+
+.modal-container h1 {
+    color: #474646;
+    letter-spacing: 3px;
+}
+
+.modal-container p {
+    color: #161616;
+
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+    height: 530px;
+
+}
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+button:hover {
+    background-color: white;
+    color: #5b82ec;
+}
+
+
+/*LA OTRA VENTANA EMERGENTE*/
+.modal-container1 {
+    z-index: 2;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+}
+
+.modal-container1 img {
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+
+.modal-container1 h1 {
+    color: #474646;
+    letter-spacing: 3px;
+}
+
+.modal-container1 p {
+    color: #161616;
+
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal1 {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+    height: 530px;
+
+}
+
+.modal1 h1 {
+    margin: 0;
+}
+
+.modal1 p {
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.modal-container1  .cl {
+    margin-left: 0px;
+}
+
+button:hover {
+    background-color: white;
+    color: #5b82ec;
+}
+
+
+.foto a {
+
+    background-color: #0a319c;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    display: inline-block;
+
+}
+
+.foto img {
+    margin: 0 20px 0 20px;
+
+}
+
+.galeria img {
+    margin: 0 20px 0;
+}
+
+
+/*EFECTO DE MOVIMIENTO DE IMAGEN*/
+.imagen-port:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 20);
+    transition: all 0.45s;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+/*SECCION PRUEBA NUEVA SLID*/
+.slid {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/rv.jpg);
+    background-attachment: fixed;
+    height: 20em;
+
+}
+
+.slid h2 {
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 40px;
+    letter-spacing: 2px;
+
+}
+
+.slid p {
+    color: #fff;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 19px;
+
+}
+
+/*CLIENTES*/
+.derechos {
+    background-color: #094766;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #161616;
+}
+.derechos h2 {
+    color: rgb(27, 27, 27);
+}
+.derechos h4:hover {
+    color: #fff;
+}
+
+/*SECCION DE MISION Y VISION*/
+
+.contenido {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e1eef1;
+
+}
+
+.contenedor-cajas .titulo {
+    padding: 25px;
+    top: auto;
+    color: #414144;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 6px;
+}
+
+.contenedor-cajas h4 {
+    padding: 30px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.contenedor-cajas p {
+    text-align: justify;
+    color: #414144;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.contenido .cajas {
+    width: 330px;
+    height: 430px;
+    border-radius: 0px;
+
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.cajas {
+    margin-bottom: 200px;
+    padding: 0px 20px 0 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+/*SECCION DE NUESTRO PRODUCTO*/
+
+.contenido-producto {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    text-align: justify;
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.barra-color {
+
+    background-size: cover;
+    background-repeat: repeat-x;
+    object-fit: cover;
+    background-image: url(img/caldera.jpg);
+    width: 100%;
+    height: 260px;
+   
+}
+
+.barra-color img {
+    position: absolute;
+}
+
+.barra-color h2 {
+    letter-spacing: 7px;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    padding: 0px;
+}
+
+.producto1 {
+
+    margin: auto;
+    width: 90%;
+
+}
+
+.texto3 {
+    line-height: 30px;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.texto3 p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: Cosmos;
+}
+
+.texto3 h2 {
+    font-family: Cosmos;
+}
+
+.producto1 p {
+    line-height: 22px;
+    word-spacing: 3px;
+    margin: 20px;
+    justify-content: center;
+    text-align: justify;
+    color: #78787a;
+    font-size: 15px;
+    padding: 40px;
+
+}
+
+.producto1 img {
+    border-radius: 0%;
+}
+
+.tecnica {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.ficha button {
+    background-color: #192c47;
+     border: 0px;
+     border-radius: 0px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+     padding: 13px 40px;
+     margin: 10px;
+     letter-spacing: 2px;
+ }
+ .ficha button:hover {
+    background-color: #78a240;  
+    color: #fff;
+ }
+ 
+ .ficha a {
+     text-decoration: none;
+     font-size: 17px;
+     color: #fff;
+     font-family: Cosmos;
+     letter-spacing: 3px;
+     
+ }
+
+/*FOOTER*/
+
+footer {
+
+    background: #094766;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+footer h2 {
+    color: #242424;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #ccc;
+    text-align: justify;
+}
+
+.content-foo {
+    text-align: column;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.content-foo a {
+    color: #ffffff;
+    list-style: none;
+}
+
+.content-foo a:hover {
+    color: #449bec;
+    cursor: pointer;
+}
+
+.content-foo h4 {
+    letter-spacing: 0.5px;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+
+.content-foo p {
+    border-radius: #6545;
+    color: #fff;
+    word-spacing: 5px;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: justify;
+}
+
+/*BOTON COMO LLEGAR*/
+
+.localizacion {
+    background-color: #5b82ec;
+    border: 0;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 13px;
+}
+
+.localizacion a {
+    list-style: none;
+    text-decoration: inherit;
+}
+
+/*Boton pedir una cotizacion*/
+
+.cot {
+    background-color: #5b82ec;
+    border: 0;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 15px;
+
+}
+
+.cot a {
+    list-style: none;
+    text-decoration: inherit;
+}
+
+/*BOTTOM DE FACEBOOK*/
+
+ .imagen-fc i:hover {
+   color: #5b82ec;
+  
+}
+.imagen-fc i {
+    font-size: 35px;
+}
+
+.li .fab {
+    font-size: 30px;
+    color: #0799fa;
+}
+
+.titulo-final {
+    font-family: 'open sans';
+    text-align: center;
+    font-size: 18px;
+    margin: 30px 0 -30px 0;
+    color: #313131;
+}
+
+/*FORMULARIO PARA CONTACTOS*/
+.con {
+    margin-bottom: 50px;
+}
+
+form {
+    margin-top: 80px;
+    margin-left: 900px;
+    width: 450px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #3b3b3b;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton {
+    background: #192c47;
+    color: #fff;
+    padding: 12px;
+}
+
+#boton:hover {
+    background-color: #00c6ff;
+    color: #fff;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+.formulario {
+    align-items: flex-start;
+    width: 40px;
+
+}
+
+.info {
+    text-decoration: none;
+    list-style: none;
+    line-height: 25px;
+    margin-left: 150px;
+    align-items: right 200px;
+    margin-top: -370px;
+    font-weight: bold;
+    -webkit-text-fill-color: rgb(253, 253, 255);
+    -webkit-text-stroke: .4px;
+    -webkit-text-stroke-color: rgb(253, 253, 253);
+    font-size: 18px;
+   letter-spacing: 2px;
+   
+}
+.info div {
+     text-shadow: 1px 0 #000000 0 #000000;
+}
+
+
+.form0 {
+    background-size: cover;
+    background-image:  url(img/lab4.jpg);
+  
+    
+}
+
+.mapa1 {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mapa1 h2 {
+    font-size: 18px;
+}
+.mapa h3 {
+    color: #ccc;
+}
+
+
+/*AQUI TERMINA FORMULARIO*/
+/*SECCION DE *********CERTIFICACIONES********/
+
+.certificacion {
+text-align: center;
+
+}
+/*
+.calidad h2:before {
+    content: "";
+    right: 100%;
+    width: 80px;
+    height: 2px;
+    border-bottom: 2px solid #154a7d;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.calidad h2:after {
+    content: "";
+    left: 100%;
+    width: 80px;
+    height: 2px;
+    border-bottom: 2px solid #154a7d;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+*/
+/*RESPONSIVO A 1200PX*/
+@media screen and (max-width:1200px) {
+    
+    .nav-menu a {
+        margin-left: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .nav-menu {
+        margin-left: 50px;
+    }
+
+    /*SECCION DE INDEX*/
+.calidad {
+    margin-top: 80px;
+    }
+    .slider1 .btnvideo {
+    margin-top: 350px;
+    margin-left: 20px;
+    }
+    /*PRODUCTOS*/
+.barra-color {
+    display: flex;
+    height: 150px;
+    }
+    
+    .barra-color h2 {
+    margin: 15px;
+    font-size: 20px;
+    text-align: center;
+    justify-items: center;
+    }
+    
+    .barra-color img {
+    margin: 10%;
+    height: 10%;
+    margin-top: 60px;
+    }
+    
+    .contenido-producto {
+    margin: 20px 0 20px;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin-top: -5px;
+    
+    }
+    
+    .contenido-producto img {
+    width: 260px;
+    height: 200px;
+    }
+    
+    .contenido-textos img {
+    
+    width: 0px;
+    height: 120px;
+    }
+    
+    .producto1 h3 {
+    font-size: 15px;
+    letter-spacing: normal;
+    }
+    .producto1 p{
+    margin-top: -20px;
+    }
+    .tecnica a{
+    text-align: center;
+    }
+    /*INDEX CONTACTO*/
+    .requerimientos {
+        margin-left: -70px;
+    }
+    .info .li {
+        font-size: 15px;
+    }
+    .form {
+        margin-left: -170px;
+    }
+   
+}
+
+/*RESPONSIVO A 950PX*/
+@media screen and (max-width:992px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   
+ /*MENU HAMBURGUESA DE LA NUEVA BARRA MENU*/
+ .header {
+    height: 120px;
+    max-width: 97%;
+    padding-left: 0;
+
+}
+
+.logo img {
+    font-size: 25px;
+    padding: 15px 10px;
+    line-height: 60px;
+   
+    width: 120px;
+    height: 70px;
+    margin-top: -15px;
+    margin-bottom: -20px;
+}
+.nav {
+    width: 100%;
+}
+.nav a img{
+    margin-left: 20px;
+    width: 20px;
+    height: 80px;
+    margin: -10px 0px 0px -10px;
+}
+
+.nav-menu {
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #9fc9cc;
+    position: fixed;
+    left: 0;
+    margin: 0%;
+    top: 78px;
+    width: 50%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+}
+
+.nav-menu-item {
+    line-height: 70px;
+    font-size: 15px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background: none;
+    color: #000000;
+}
+
+
+.nav-toggle {
+    margin-top: 0px;
+    width: 70px;
+    height: 60px;
+    display: block;
+    font-size: 25px;
+}
+
+.nav-menu_visible {
+    left: 500px;
+}
+.logo img {
+    margin-left: 65px;
+    height: 90px;
+    width: 150px;
+} 
+  /*FORMULARIO DE CONTACTOS*/
+form {
+width: 1400%;
+}
+.formulario {
+  margin-left: -890px;
+}
+.formulario input {
+width: 100%;
+
+}
+.formulario textarea {
+  width: 100%;
+}
+
+.info {
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  
+}
+
+/*SECCION DE INDEX*/
+.calidad {
+margin-top: 200px;
+}
+.slider1 .btnvideo {
+margin-top: 300px;
+margin-left: 20px;
+}
+
+.slider1 iframe {
+width: 700px;
+height: 500px;
+}
+.slider1 .clo {
+margin-left: 658px;
+margin-top: -465px;
+}
+/*NOSOTROS*/
+.contenedor-sobre-nosotros .ar img {
+width: 380px;
+height: 380px;
+}
+.contenido-textos p{
+font-size: 15px;
+line-height: 22px;
+}
+/*BOTONES SLIDER PROCESO*/
+.slider_btn-left5 {
+left: 766px;
+}
+
+.slider_btn-rigth5 {
+right: 10px;
+}
+/*SECCION MISION Y VISION*/
+
+.contenido {
+padding: 20px;
+line-height: 30px;
+
+}
+
+.contenedor-cajas .cajas {
+padding: auto;
+margin: 4px;
+
+}
+
+.contenedor-cajas .titulo {
+font-size: 25px;
+}
+
+.contenedor-cajas p {
+text-align: justify;
+text-justify: right;
+}
+
+.cajas h4 {
+margin: -10px;
+}
+.barra-color {
+    display: flex;
+    height: 150px;
+}
+
+.barra-color h2 {
+    margin: 15px;
+    font-size: 20px;
+    text-align: center;
+    justify-items: center;
+}
+
+.barra-color img {
+    margin: 10%;
+    height: 10%;
+    margin-top: 60px;
+}
+
+.contenido-producto {
+    margin: 20px 0 20px;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin-top: -5px;
+
+}
+
+.contenido-producto img {
+    width: 260px;
+    height: 200px;
+}
+
+.contenido-textos img {
+    width: 0px;
+    height: 120px;
+}
+
+.producto1 h3 {
+    font-size: 15px;
+    letter-spacing: normal;
+}
+
+/*PRODUCTOS*/
+.barra-color {
+display: flex;
+height: 150px;
+}
+
+.barra-color h2 {
+margin: 15px;
+font-size: 20px;
+text-align: center;
+justify-items: center;
+}
+
+.barra-color img {
+margin: 10%;
+height: 10%;
+margin-top: 60px;
+}
+
+.contenido-producto {
+margin: 20px 0 20px;
+max-width: 100%;
+width: 100%;
+display: block;
+margin-top: -5px;
+
+}
+
+.contenido-producto img {
+width: 260px;
+height: 200px;
+}
+
+.contenido-textos img {
+
+width: 0px;
+height: 120px;
+}
+
+.producto1 h3 {
+font-size: 15px;
+letter-spacing: normal;
+}
+.producto1 p{
+margin-top: -20px;
+}
+.tecnica a{
+text-align: center;
+}
+}
+
+/*RESPONSIVO A 768PX*/
+@media screen and (max-width:780px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+   
+
+    /*MENU HAMBURGUESA DE LA NUEVA BARRA MENU*/
+    .header {
+        height: 120px;
+        max-width: 97%;
+        padding-left: 0;
+
+    }
+
+    .logo img {
+        font-size: 25px;
+        padding: 15px 10px;
+        line-height: 60px;
+       
+        width: 120px;
+        height: 70px;
+        margin-top: -15px;
+        margin-bottom: -20px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav a img{
+        margin-left: 20px;
+        width: 120px;
+        height: 80px;
+        margin: -10px 0px 0px -10px;
+    }
+  
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        
+        background-color: #9fc9cc;
+        position: fixed;
+        left: 0;
+        margin: 0%;
+        top: 78px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+        font-size: 15px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #000000;
+    }
+
+
+    .nav-toggle {
+        margin-top: 0px;
+        width: 70px;
+        height: 60px;
+        display: block;
+        font-size: 25px;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+    .logo img {
+        margin-left: 65px;
+        height: 90px;
+        width: 150px;
+    } 
+      /*FORMULARIO DE CONTACTOS*/
+
+.form0 {
+  width: 100%;
+}
+  form {
+    width: 1400%;
+}
+  .formulario {
+      margin-left: -700px;
+  }
+  .formulario input {
+   width: 100%;
+  
+  }
+  .formulario textarea {
+      width: 100%;
+  }
+  
+  .info {
+      margin-top: 20px;
+      margin-left: 100px;
+      width: 100%;
+      height: 400px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0px;
+      
+  }
+  footer .mapa1 {
+    width: 100%;
+  }
+
+  /*SECCION DE INDEX*/
+  .calidad {
+    margin-top: 200px;
+  }
+.slider1 .btnvideo {
+    margin-top: 250px;
+    margin-left: 20px;
+}
+
+.slider1 iframe {
+    width: 700px;
+    height: 500px;
+}
+.slider1 .clo {
+    margin-left: 658px;
+    margin-top: -465px;
+}
+  /*NOSOTROS*/
+  .contenedor-sobre-nosotros .ar img {
+    width: 380px;
+    height: 380px;
+  }
+  .contenido-textos p{
+font-size: 15px;
+line-height: 22px;
+  }
+
+.slider_btn-left5 {
+    left: 583px;
+}
+
+.slider_btn-rigth5 {
+    right: 10px;
+}
+/*SECCION MISION Y VISION*/
+
+.contenido {
+    padding: 20px;
+    line-height: 30px;
+
+}
+
+.contenedor-cajas .cajas {
+    padding: auto;
+    margin: 4px;
+
+}
+
+.contenedor-cajas .titulo {
+    font-size: 25px;
+}
+
+.contenedor-cajas p {
+    text-align: justify;
+    text-justify: right;
+}
+
+.cajas h4 {
+    margin: -10px;
+}
+ .barra-color {
+        display: flex;
+        height: 150px;
+    }
+
+    .barra-color h2 {
+        margin: 15px;
+        font-size: 20px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .barra-color img {
+        margin: 10%;
+        height: 10%;
+        margin-top: 60px;
+    }
+
+    .contenido-producto {
+        margin: 20px 0 20px;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        margin-top: -5px;
+
+    }
+
+    .contenido-producto img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .contenido-textos img {
+        width: 0px;
+        height: 120px;
+    }
+
+    .producto1 h3 {
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+
+/*PRODUCTOS*/
+.barra-color {
+    display: flex;
+    height: 150px;
+}
+
+.barra-color h2 {
+    margin: 15px;
+    font-size: 20px;
+    text-align: center;
+    justify-items: center;
+}
+
+.barra-color img {
+    margin: 10%;
+    height: 10%;
+    margin-top: 60px;
+}
+
+.contenido-producto {
+    margin: 20px 0 20px;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin-top: -5px;
+
+}
+
+.contenido-producto img {
+    width: 260px;
+    height: 200px;
+}
+
+.contenido-textos img {
+    
+    width: 0px;
+    height: 120px;
+}
+
+.producto1 h3 {
+    font-size: 15px;
+    letter-spacing: normal;
+}
+.producto1 p{
+    margin-top: -20px;
+}
+.tecnica a{
+    text-align: center;
+}
+
+}
+
+
+/*RESPONSIVO A 600PX*/
+@media screen and (max-width:600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*MENU HAMBURGUESA DE LA NUEVA BARRA MENU*/
+    .header {
+        height: 120px;
+        max-width: 97%;
+        padding-left: 0;
+
+    }
+    
+
+    .logo img {
+        font-size: 25px;
+        padding: 15px 10px;
+        line-height: 60px;
+       
+        width: 120px;
+        height: 70px;
+        margin-top: -15px;
+        margin-bottom: -20px;
+    }
+    .nav a img{
+        margin-left: 20px;
+        width: 120px;
+        height: 80px;
+        margin: -10px 0px 0px -10px;
+    }
+  
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        
+        background-color: #9fc9cc;
+        position: fixed;
+        left: 0;
+        margin: 0%;
+        top: 78px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+        font-size: 15px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none;
+        color: #000000;
+    }
+
+
+    .nav-toggle {
+        margin-top: 0px;
+        width: 70px;
+        height: 60px;
+        display: block;
+        font-size: 25px;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+    .logo img {
+        margin-left: 65px;
+        height: 90px;
+        width: 150px;
+    } 
+
+    
+    /*FORMULARIO DE CONTACTOS*/
+  form {
+    width: 900%;
+}
+  .formulario {
+      margin-left: -720px;
+  }
+  .formulario input {
+   width: 100%;
+  
+  }
+  .formulario textarea {
+      width: 100%;
+  }
+  
+  .info {
+      margin-top: 20px;
+      margin-left: 0px;
+      width: 100%;
+      height: 400px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0px;
+      
+  }
+  .info .li {
+    margin-left: 80px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  footer{
+      margin-top: -250px;
+      
+  }
+
+  .mapa1 {
+      width: 100%;
+  }
+  
+  .mapa1 h2 {
+      margin-top: 8px;
+      font-size: 18px;
+  }
+    /*MENU HAMBURGESA DENTRO DEL FORMULARIO*/
+
+  
+
+    /*Seccion Slider1*/
+
+    .slider1 img {
+      
+        height: content;
+       
+    }
+    .slider1 {
+        margin-bottom: -270px;
+    }
+
+    .slider1 .btnvideo {
+        margin-top: 160px;
+        margin-left: 0px;
+        width: 200px;
+        border-radius: 0%;
+    }
+    .slider1 .clo {
+        margin-top: -335px;
+        margin-left: 300px;
+        width: 50px;
+        border-radius: 0%;
+    }
+    iframe {
+        max-width: 350px;
+        max-height: 300px;
+    }
+   .slider1 .modal-container1 p video{
+    margin-left: -20px;
+    margin-top: -230px;
+    height: 400px;
+    width: 380px;
+    }
+    
+
+    /*PROCESO*/
+
+    .contenedor-sobre-nosotros img {
+        margin-left: -20px;
+    }
+
+    /*SECCION NUESTRO PRODUCTO*/
+
+    .barra-color {
+        display: flex;
+        height: 150px;
+    }
+
+    .barra-color h2 {
+        margin: 15px;
+        font-size: 20px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .barra-color img {
+        margin: 5px;
+        height: 105px;
+        margin-top: 60px;
+    }
+
+    .contenido-producto {
+        margin: 20px 0 20px;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        margin-top: -5px;
+
+    }
+
+    .contenido-producto img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .contenido-textos img {
+        width: 0px;
+        height: 120px;
+    }
+
+    .producto1 h3 {
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+
+
+    /*NUESTROS PROCEOSOS*/
+
+    .container-slider {
+        width: auto;
+        height: auto;
+
+    }
+
+    .slider_btn-left {
+        left: 295px;
+    }
+
+    .slider_btn-rigth {
+        right: 10px;
+    }
+
+
+
+    .galeria {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .modal-container {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 18px 10px;
+        top: -20px;
+
+    }
+
+    .modal {
+        justify-items: auto;
+        align-items: center;
+        width: 300px;
+        height: 370px;
+    }
+
+    .modal-container .modal video {
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 230px;
+
+    }
+   /*VENTANA MODAL DE SECCION PROCESOS SOLA///*/
+   .container-slider5 {
+    width: auto;
+    height: auto;
+
+}
+
+.slider_btn-left5 {
+    left: 295px;
+}
+
+.slider_btn-rigth5 {
+    right: 10px;
+}
+   
+   .modal-container1 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 18px 10px;
+    top: -20px;
+
+}
+
+.modal1 {
+    justify-items: auto;
+    align-items: center;
+    width: 300px;
+    height: 370px;
+}
+    .modal-container1 .modal1 video {
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 230px;
+
+    }
+    .texto3 .titulo {
+        font-size: 30px;
+    }
+
+
+    /*sobre nosotros*/
+    .imagen-about-us {
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 95%;
+    }
+
+    .contenedor-sobre-nosotros {
+        margin-block-start: column;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+
+
+    }
+
+    .contenedor-sobre-nosotros img {
+        width: 100%;
+    }
+
+    .contenedor-sobre-nosotros .ar img {
+        margin-top: -80px;
+        margin-left: 10px;
+        width: 250px;
+        height: 250px;
+    }
+
+    /*Galeria*/
+    .imagen-port {
+        width: 95%;
+    }
+
+    .contenedor-sobre-nosotros video {
+        margin-top: -100px;
+        max-width: 100%;
+        width: auto;
+        height: 300px;
+
+    }
+
+        /*SECCION MISION Y VISION*/
+
+        .contenido {
+            padding: 20px;
+            line-height: 30px;
+
+        }
+
+        .contenedor-cajas .cajas {
+            padding: auto;
+            margin: 4px;
+
+        }
+
+        .contenedor-cajas .titulo {
+            font-size: 25px;
+        }
+
+        .contenedor-cajas p {
+            text-align: justify;
+            text-justify: right;
+        }
+
+        .cajas h4 {
+            margin: -10px;
+        }
+
+    /*FOOTER*/
+    footer {
+        margin-top: 0px;
+    }
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .content-foo h4 {
+        border: none;
+        text-align: left;
+    }
+
+    .content-foo p {
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .content-foo img {
+        height: 50%;
+        width: 50%;
+        margin-left: -70px;
+    }
+    .content-foo .cot {
+    margin-left: -180px;
+    }
+
+    .content-foo .imagen-fc img {
+        width: 10%;
+        margin-left: 1px;
+    }
+    .content-foo .mapa h3{
+        text-align: left;
+    }
+
+    .titulo-final {
+        margin-top: 1px;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    .mapa {   
+        display: inline;
+        text-align: left;
+    }
+    .mapa h3{
+        text-align: left;
+    }
+
+    .mapa h3 {
+        color: #ccc;
+        text-align: left;
+    }
+    .mapa p{
+        font-size: 16px;
+        text-align: left;
+        border-bottom: none;   
+    }
+    .mapa p:first-child {
+        margin-left: 70px;
+    }
+  
+
+    .slid p {
+        display: none;
+    }
+
+    .slid h2 {
+        font-size: 20px;
+        line-height: -10px;
+    }
+
+    .slid {
+        height: 130px;
+    }
+    .conte {
+        display: none;
+    }
+    .idiom {
+    margin-right: 290px;
+      margin-top: -30px;
+    }
+  .one{
+    margin-top: 30px;
+  }
+
+}
